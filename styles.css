@@ -65,24 +65,19 @@ main {
   padding: 4rem 1.5rem;
 }
 
-main:has(.hero-split) {
+main.wide {
   max-width: 960px;
 }
 
 .hero-split {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2.5rem;
 }
 
-.hero-text {
-  flex: 1;
-  min-width: 0;
-}
-
 .hero-image {
-  flex: 1;
-  min-width: 0;
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -91,7 +86,7 @@ main:has(.hero-split) {
 
 @media (max-width: 680px) {
   .hero-split {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
