@@ -71,7 +71,7 @@ main.wide {
 
 .hero-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -80,6 +80,7 @@ main.wide {
   display: block;
   width: 100%;
   height: auto;
+  min-width: 0;
   border-radius: 12px;
   object-fit: cover;
 }
