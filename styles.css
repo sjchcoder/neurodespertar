@@ -65,6 +65,33 @@ main {
   padding: 4rem 1.5rem;
 }
 
+main:has(.hero-split) {
+  max-width: 960px;
+}
+
+.hero-split {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 680px) {
+  .hero-split {
+    flex-direction: column;
+  }
+}
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
