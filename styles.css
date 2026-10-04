@@ -77,11 +77,14 @@ main:has(.hero-split) {
 
 .hero-text {
   flex: 1;
+  min-width: 0;
 }
 
 .hero-image {
   flex: 1;
-  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
