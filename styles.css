@@ -127,6 +127,69 @@ main.wide {
   font-size: 2rem;
 }
 
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Book page (Avogueris) */
+.book-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.book-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 680px) {
+  .book-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .book-cover {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+.book-intro blockquote {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--accent-light);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+.book-tagline {
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.book-infographics {
+  margin-top: 3rem;
+}
+
+.book-infographics figure {
+  margin: 0 0 2.5rem;
+}
+
+.book-infographics img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;
