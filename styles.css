@@ -1,9 +1,11 @@
 :root {
-  --bg: #0f1115;
-  --bg-alt: #171a21;
-  --text: #e8eaed;
-  --muted: #a3a9b4;
-  --accent: #7c5cff;
+  --bg: #05070f;
+  --bg-alt: #0b1230;
+  --border: #1b2550;
+  --text: #eef1fa;
+  --muted: #9aa3c4;
+  --accent: #0a2f93;
+  --accent-light: #2f56c2;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
 
 header {
   background: var(--bg-alt);
-  border-bottom: 1px solid #262a33;
+  border-bottom: 1px solid var(--border);
 }
 
 nav {
@@ -35,9 +37,28 @@ nav {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 .nav-links {
@@ -133,5 +154,5 @@ footer {
   padding: 1.5rem;
   color: var(--muted);
   font-size: 0.85rem;
-  border-top: 1px solid #262a33;
+  border-top: 1px solid var(--border);
 }
